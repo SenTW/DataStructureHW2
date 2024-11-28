@@ -66,7 +66,7 @@ Example Input
 4 5 8 
 Example Output
 Merged Array: [2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 8]
- 
+
 Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
 You are given N tasks, each with a profit and a deadline. Write a Python program to schedule the tasks such that the maximum profit is achieved, using a Max Priority Queue.
 Each task must be completed within its deadline (1-based index), and only one task can be scheduled at a time.
