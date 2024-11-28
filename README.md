@@ -10,9 +10,9 @@ Output Format:
 Print an integer representing the diameter of the binary tree.
 Example:
 Input:
-[1, 2, 3, 4, 5, -1, 6]
+【1 2 3 -1 4 -1 -1 5 6]
 Output:
-5
+4
 
 
 Question 2: Heap Sort - Build a Priority Queue for Tasks
@@ -31,18 +31,22 @@ Output Format:
 2.	At the end, print the list of remaining tasks in descending order of priority.
 Example:
 Input:
-5
-ADD Task1 30
-ADD Task2 40
-ADD Task3 20
+Enter the number of operations: 7
+Enter operations
+ADD TaskA 25
+ADD TaskB 40
 GET
-ADD Task4 50
+ADD TaskC 30
+ADD TaskD 10
+GET
 GET
 
+
 Output:
-Task2
-Task4
-Remaining tasks: [('Task1', 30), ('Task3', 20)]
+TaskB
+TaskC
+TaskA
+Remaining tasks: [('TaskD', 10)]
 
 
 Question 3: Merge K Sorted Arrays Using Min Priority Queue
@@ -58,15 +62,14 @@ Input Format
 Output Format
 •	A single line containing the merged sorted array.
 
-Example Input
-4
-2 3 5
-3 4 6
-2 3 7
-4 5 8 
-Example Output
-Merged Array: [2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 8]
-
+Input
+3
+3 1 4 7
+3 2 5 8
+3 3 6 9
+Output
+Merged Array: 1 2 3 4 5 6 7 8 9
+ 
 Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
 You are given N tasks, each with a profit and a deadline. Write a Python program to schedule the tasks such that the maximum profit is achieved, using a Max Priority Queue.
 Each task must be completed within its deadline (1-based index), and only one task can be scheduled at a time.
@@ -78,20 +81,15 @@ Output Format
 1.	The maximum profit that can be achieved.
 2.	The list of scheduled tasks in the order they are executed.
 
-Example Input
+Input
 5
-50   2
-60   1
-70   2
-80   1
-90   3
-Example Output
-Maximum Profit: 240
-Scheduled Tasks: [90, 80, 70]
-Explanation
-•	Input represents 4 tasks with (profit, deadline) as (100, 2), (19, 1), (27, 2), (25, 1).
-•	Using a Max Priority Queue, tasks with higher profit are prioritized while ensuring deadlines are respected:
-o	Task (100, 2) is scheduled in slot 2.
-o	Task (27, 2) is scheduled in slot 1.
-o	Total profit: 100 + 27 = 127.
+50 3
+40 1
+60 2
+30 2
+70 3
+
+Output
+Maximum Profit: 180
+Scheduled Tasks: [70, 60, 50]
 
